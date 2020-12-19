@@ -1,6 +1,10 @@
 #!/bin/bash
 
-read name
+echo "You could fill username and token manually without pipe < "
+echo "but easier ./list_my_repos.sh < UsernameAndTokenFile.txt"
+echo "Username as in path"
+read username
+echo "token"
 read token
 
 curl -i -H "Authorization: token $token" \
